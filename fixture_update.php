@@ -9,7 +9,7 @@ $event  = $Mydbconnection->escapeString(htmlspecialchars($_POST["event"]));
 $homeaway  = $Mydbconnection->escapeString(htmlspecialchars($_POST["homeaway"]));
 $time  = $Mydbconnection->escapeString(htmlspecialchars($_POST["time"]));
 $rinkstrips  = $Mydbconnection->escapeString(htmlspecialchars($_POST["rinkstrips"]));
-
+//What is this
 //$Mydbconnection->query('update fixtures set Date = "'.$date.'", Event = "'.$event.'", Homeaway = "'.$homeaway.'", Time = "'.$time.'", Rinkstrips = "'.$rinkstrips.'" where Fixture = '.$fixture);
 
 $Mydbconnection->query('update fixture set Date = "'.$dateFrm.'", Event = "'.$event.'", Time = "'.$time.'", Rinkstrips = "'.$rinkstrips.'", Homeaway = "'.$homeaway.'" where Fixture = '.$fixture);
