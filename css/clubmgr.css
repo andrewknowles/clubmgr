@@ -1,0 +1,332 @@
+/*REMEMBER
+div id = # in css and class = .
+https://www.youtube.com/watch?v=Wm6CUkswsNw - 21mins*/
+
+body {
+/*	font-family: Arial, Helvetica, Sans-Serif;*/
+/*	font-family: Verdana, Geneva, sans-serif;*/
+	font-family: "Open Sans";
+	font-size: 24px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/*----------Containers ----------------------------*/
+.container {
+  	width: 80%;
+  	padding-right: 30px;
+  	padding-left: 30px;
+  	margin-right: auto;
+  	margin-left: auto;
+	overflow: hidden;
+}
+
+.container-center {
+  	width: 100%;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*------------- Fonts Sizes ------------------*/
+h1, h2, h3, h4, h5, h6
+{
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+/*------------- List Elements ----------------*/
+nav ul {
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+
+ul img{
+	margin:0;
+	padding:0;
+}
+
+header {
+	background:#1F2BFF;
+	color:#ffffff;
+	padding-top:1px;
+	min-height:70px;
+	border-bottom:#FFF515 5px solid;
+	margin:0;
+	padding-bottom:2px;
+}
+
+#logobox {
+	height: 70px;
+	width:70px;
+	margin-left:5px;
+}
+
+#logo  {
+	height: 30px;
+	width:30px;
+	position:absolute;
+	margin:-13px, -5px 0;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+/*	text-transform:uppercase;*/
+	font-size:20px;
+	font-weight: 200;
+}
+
+
+header li{
+	float:right;
+	display:inline;
+	font-size:16px;
+	font-weight:bold;
+	padding:0 20px 0 20px;
+}
+
+header nav{
+	float:right;
+	margin-bottom:0px;
+	margin-top:-60px;
+	padding-right: 130px;
+}
+
+header .highlite a {
+	color: #FFF515;
+	font-weight: bold;
+}
+
+header a:hover {
+/*	color:#FFF515;*/
+	color: #ffd954;
+	text-decoration: underline;
+}
+
+#hero {
+	min-height: 600px;
+	background:url("backgrounds/hero2.jpg") no-repeat;
+}
+
+
+#hero h1{
+	font-size:60px;
+	color:#ffffff;
+	font-weight: bold;
+	margin:0;
+	padding:150px 0 0 0;
+}
+
+#hero h2{
+	font-size:30px;
+	color:#ffffff;
+	font-weight: bold;
+	margin:0;
+	padding:20px 0 0 0;
+}
+
+#about, #activities, #results, #news
+{
+	background-color:#d6d6c2;
+}
+
+#about h1,
+#activities h1,
+#contact h1,
+#results h1,
+#news h1,
+#bbpsbc h1,
+#links h1,
+#fixtures h1,
+#gallery h1
+{
+	text-align: center;
+	font-weight: bold;
+	font-size:36px;
+}
+
+#boxes, #contact, #links {
+	background-color:#ebebe0;
+	padding-top: 20px;
+}
+
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;
+/*	#boxes .box {
+		float: none;
+		text-align: center;
+		width: 100%*/
+}
+
+#boxes .box img{
+	width:90px;
+}
+
+#boxes .box a{
+	text-decoration: none;
+	color: blue;
+}
+
+aside {
+	margin-bottom: 50px;
+}
+
+aside#ptg1 {
+	float: right;
+	width: 15%;
+	padding: 0;
+	margin: 0;
+}
+
+article#actcol1 {
+	float: left;
+	width: 80%;
+}
+
+aside#ptg2 {
+	float: left;
+	width: 15%;
+	padding: 0;
+	margin: 0;
+}
+
+article#actcol2 {
+	float: right;
+	width: 80%;
+}
+
+#contact p {
+text-align: center;
+}
+
+/*------------------ Tables -----------------------------*/
+
+.table {
+  width: 80%;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-striped tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/*specifics for Whats on this week table*/
+#table-week {
+	width: 50%;
+	font-size: 18px;
+  	}
+
+#committeetable {
+width: 80%;
+font-size: 18px;
+margin: 0px auto;
+}
+
+#committeetable td,
+#fixturetable td{
+text-align: left;
+padding: 15px;
+border-bottom: 1px solid #ddd;
+}
+
+#resulttable td{
+text-align: center;
+padding: 15px;
+border-bottom: 1px solid #ddd;
+}
+
+ #fixturetable h3{
+	margin:0;
+	padding:0;
+}
+
+#fixturetable{
+	width: 80%;
+	font-size: 18px;
+	margin: 0px auto;
+	}
+
+#resulttable{
+	width: 60%;
+	font-size: 18px;
+	margin: 0px auto;
+	}
+
+/*------------------------------------------------------*/
+
+#links,
+#gallery h3{
+	text-align: center;
+}
+
+
+footer {
+	background:#1F2BFF;
+	color:#ffffff;
+	padding-top:20px;
+	min-height:20px;
+	border-top:#FFF515 5px solid;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
+/*Media Queries */
+@media(max-width: 768px){
+	header #logo,
+	header nav,
+	header nav li,
+	}
+
+.slider{
+	text-align: center;
+}
